@@ -22,10 +22,11 @@
         "useIframeTitle": "off",
         "useKeyWithClickEvents": "off",
         "useKeyWithMouseEvents": "off",
+        "useMediaCaption": "off",
         "useSemanticElements": "warn"
       },
       "complexity": {
-        "noForEach": "warn",
+        "noForEach": "off",
         "noUselessFragments": "off",
         "useLiteralKeys": "error"
       },
@@ -39,9 +40,11 @@
         "noDangerouslySetInnerHtml": "warn"
       },
       "style": {
+        "noNonNullAssertion": "off",
         "noParameterAssign": "off",
         "noUnusedTemplateLiteral": "warn",
         "noUselessElse": "error",
+        "useNumberNamespace": "off",
         "useNodejsImportProtocol": "warn",
         "useTemplate": "off"
       },

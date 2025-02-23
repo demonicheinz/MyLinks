@@ -1,0 +1,105 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "root": "",
+    "defaultBranch": "main"
+  },
+  "files": {
+    "maxSize": 1048576,
+    "ignore": [],
+    "include": [],
+    "ignoreUnknown": false
+  },
+  "linter": {
+    "enabled": true,
+    "include": ["**"],
+    "rules": {
+      "recommended": true,
+      "a11y": {
+        "useIframeTitle": "off",
+        "useKeyWithClickEvents": "off",
+        "useKeyWithMouseEvents": "off",
+        "useSemanticElements": "warn"
+      },
+      "complexity": {
+        "noForEach": "warn",
+        "noUselessFragments": "off",
+        "useLiteralKeys": "error"
+      },
+      "correctness": {
+        "noEmptyPattern": "off",
+        "noSwitchDeclarations": "error",
+        "useExhaustiveDependencies": "off",
+        "useJsxKeyInIterable": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "warn"
+      },
+      "style": {
+        "noParameterAssign": "off",
+        "noUnusedTemplateLiteral": "warn",
+        "noUselessElse": "error",
+        "useNodejsImportProtocol": "warn",
+        "useTemplate": "off"
+      },
+      "suspicious": {
+        "noArrayIndexKey": "warn",
+        "noExplicitAny": "warn"
+      }
+    }
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 100,
+    "attributePosition": "auto",
+    "useEditorconfig": false
+  },
+  "organizeImports": {
+    "enabled": true,
+    "include": ["*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx}"]
+  },
+  "css": {
+    "parser": {
+      "cssModules": false
+    },
+    "formatter": {
+      "enabled": false,
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf",
+      "lineWidth": 100,
+      "quoteStyle": "double"
+    },
+    "linter": {
+      "enabled": false
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  },
+  "json": {
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": true
+    },
+    "formatter": {
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineEnding": "lf",
+      "lineWidth": 100,
+      "trailingCommas": "none"
+    },
+    "linter": {
+      "enabled": true
+    }
+  }
+}
